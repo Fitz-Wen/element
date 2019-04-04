@@ -62,6 +62,7 @@
     methods: {
       close() {
         this.visible = false;
+        // *回调函数
         this.$emit('close');
       }
     },

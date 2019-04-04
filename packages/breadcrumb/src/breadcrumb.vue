@@ -17,7 +17,7 @@
         default: ''
       }
     },
-
+    // * provide 选项应该是一个对象或返回一个对象的函数。
     provide() {
       return {
         elBreadcrumb: this
