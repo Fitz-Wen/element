@@ -39,6 +39,7 @@
       :class="{ 'el-carousel__indicators--labels': hasLabel, 'el-carousel__indicators--outside': indicatorPosition === 'outside' || type === 'card' }">
       <li
         v-for="(item, index) in items"
+        :key="index"
         class="el-carousel__indicator"
         :class="{ 'is-active': index === activeIndex }"
         @mouseenter="throttledIndicatorHover(index)"
@@ -50,6 +51,7 @@
 </template>
 
 <script>
+// * npm插件
 import throttle from 'throttle-debounce/throttle';
 import { addResizeListener, removeResizeListener } from 'element-ui/src/utils/resize-event';
 
@@ -200,6 +202,7 @@ export default {
         }
       }
       index = Number(index);
+      // * index 必须为整数
       if (isNaN(index) || index !== Math.floor(index)) {
         process.env.NODE_ENV !== 'production' &&
         console.warn('[Element Warn][Carousel]index must be an integer.');
