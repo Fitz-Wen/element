@@ -1,10 +1,6 @@
 ## Task
 
 - [x] Alert
-- [x] Container
-  - [x] Aside
-  - [x] Header
-  - [x] Footer
 - [ ] Autocomplete
 - [x] Badge
 - [x] Breadcrumb
@@ -19,5 +15,14 @@
 - [ ] Col
 - [x] Collapse
 - [x] CollapseItem
-
-
+- [x] Container
+  - [x] Aside
+  - [x] Header
+  - [x] Footer
+- [x] DatePicker
+- [x] Dialog
+- [ ] Dropdown
+- [ ] Form
+- [ ] Icon
+- [ ] Input
+- [ ] InputNumber

@@ -164,6 +164,7 @@
       },
       hide(cancel) {
         if (cancel !== false) {
+          // * 实现变量的sync
           this.$emit('update:visible', false);
           this.$emit('close');
           this.closed = true;
